@@ -1,0 +1,26 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{%static 'home.css'%}">
+    <center><h1>Vid Youth<h1>
+<h2> IoT based Home Automation using Django-framework </h2></center>
+
+</head>
+<body>
+
+<div class='a'>
+<form action="" method="post">
+
+{% csrf_token %}
+
+<br><br>
+<center>
+<p>Light_1:<input class='b1'type="submit" name="Light_1" value="{{Light_1_Var}}"/></p><br><br>
+<p>Light_2:<input class='b2'type="submit" name="Light_2" value="{{Light_2_Var}}"/></p>
+</center><br><br>
+
+</form>
+</div>
+</body>
